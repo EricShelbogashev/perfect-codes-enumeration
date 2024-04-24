@@ -39,6 +39,11 @@ Code(words=[1111111, 0110011, 0101101, 1100001, 1010010, 0000000, 1001100, 01101
 ### Графический пример полученного кода
 ![](misc/img.png)
 
+# Обзор
+![image](https://github.com/EricShelbogashev/perfect-codes-enumeration/assets/96541869/4efcb05c-aaeb-494e-87d8-f8fe51c41b45)
+https://youtu.be/RnbrFYOH0eQ?si=UmtnEcUmiV-LTiM8
+
+
 # Подготовка
 В `gradle.properties` добавить `gpr.user`, `gpr.token` для  
 загрузки зависимостей.
