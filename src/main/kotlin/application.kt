@@ -25,8 +25,8 @@ fun main() {
     val bases = codes16words.map(Code::echelonBasis)
     /* Преобразуем базис - порождающую матрицу к проверочной. */
     val parityChecks = bases.map(MatrixConverter::canonical)
-    /* Проверяем, что проверочная матрица является матрицей кода Хэмминга. */
-    val allHammingH = parityChecks.all { it.isHammingH() }
+    /* Проверяем, что проверочные матрицы всех кодов являются матрицами кода Хэмминга. */
+    val allHammingH = parityChecks.all(Matrix::isHammingH)
 
     codes16words.map(Code::toString).forEach(::println)
     println(allHammingH)

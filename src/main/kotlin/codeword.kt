@@ -107,7 +107,7 @@ data class Codeword(
             return generateWordsWithHammingDistance(codeword.stringBits, distance, "01")
                 .map(::Codeword)
                 .toSet()
-                .filter { codeword.distance(it) == distance }
+                .filter { codeword.distance(it) >= distance }
                 .toSet()
         }
 
